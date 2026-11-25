@@ -8,8 +8,7 @@ export default function ProductDetailModal({ product, brand, theme, onClose, onD
   if (!product) return null;
 
   const fiturList = String(product.fitur_unggulan || '')
-    .split(/
-|\|/)
+    .split(/|\|/)
     .map((s) => s.trim())
     .filter(Boolean);
 
